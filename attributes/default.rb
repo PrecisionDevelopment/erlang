@@ -26,6 +26,6 @@ default['erlang']['source']['cflags'] = ''
 
 default['erlang']['esl']['version'] = nil
 
-if !node['lsb']['codename'].nil?
+if !node['lsb'].nil?
   default['erlang']['esl']['lsb_codename'] = node['lsb']['codename']
 end
